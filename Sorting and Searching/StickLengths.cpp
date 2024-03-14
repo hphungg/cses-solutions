@@ -27,7 +27,7 @@ int main() {
 	ll ans = calc_cost(avg);
 	sort(p + 1, p + n + 1);
 	if (n % 2 == 1) {
-		ans = min(ans, calc_cost(p[n/2]));
+		ans = min(ans, calc_cost(p[n/2 + 1]));
 	} else {
 		int x = (p[n/2] + p[n/2 + 1]) / 2;
 		ans = min(ans, calc_cost(x));
